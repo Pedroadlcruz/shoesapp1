@@ -3,11 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shoesapp1/src/models/zapato_model.dart';
 import 'package:shoesapp1/src/widgets/custom_widgets.dart';
+import 'package:shoesapp1/src/helpers/helpers.dart';
 
 
 class ZapatoDescPage extends StatelessWidget {
+
+  
+
   @override
   Widget build(BuildContext context) {
+
+     cambiarStatusLight();
+
     return Scaffold(
       body: Column(
         children: <Widget>[
@@ -25,6 +32,7 @@ class ZapatoDescPage extends StatelessWidget {
                   
                   ),
                   onPressed: (){
+                    cambiarDark();
                     Navigator.pop(context);
                   },
                   elevation: 0,

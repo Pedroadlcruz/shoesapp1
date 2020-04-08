@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoesapp1/src/helpers/helpers.dart';
 import 'package:shoesapp1/src/widgets/custom_widgets.dart';
 
 class ZapatoPage extends StatelessWidget {
@@ -6,6 +7,9 @@ class ZapatoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+   cambiarDark();
+
     return Scaffold(
     //  body: CustomAppBar(texto: 'For you',),
     // body: ZapatoSizePreview(),
